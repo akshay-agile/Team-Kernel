@@ -85,7 +85,7 @@ The system combines **computer vision, machine learning, IoT monitoring, and fra
 
 ---
 
-## Tech Stack
+# Tech Stack
 
 ### Frontend
 
@@ -117,7 +117,7 @@ The system combines **computer vision, machine learning, IoT monitoring, and fra
 
 ---
 
-## Project Structure
+# Project Structure
 
 ```
 project/
@@ -137,9 +137,9 @@ project/
 
 ---
 
-## Installation
+# Installation
 
-### Clone the Repository
+## 1. Clone the Repository
 
 ```
 git clone https://github.com/your-username/aquaintelligence.git
@@ -148,21 +148,32 @@ cd aquaintelligence
 
 ---
 
-## Backend Setup
+# Backend Setup
 
-Install dependencies:
+### Install Python Dependencies
+
+If `requirements.txt` is already included:
 
 ```
 pip install -r requirements.txt
 ```
 
-Run the backend API:
+If you want to generate it from the environment:
+
+```
+pip freeze > requirements.txt
+pip install -r requirements.txt
+```
+
+---
+
+### Run the Backend API
 
 ```
 uvicorn api:app --reload --port 5000
 ```
 
-API documentation:
+API documentation will be available at:
 
 ```
 http://localhost:5000/docs
@@ -170,7 +181,7 @@ http://localhost:5000/docs
 
 ---
 
-## Frontend Setup
+# Frontend Setup
 
 ```
 cd frontend
@@ -186,7 +197,7 @@ http://localhost:5173
 
 ---
 
-## System Workflow
+# System Workflow
 
 1. User uploads satellite image.
 2. AI detects swimming pools using YOLO.
@@ -198,12 +209,12 @@ http://localhost:5173
 
 ---
 
-## Sample Dataset
+# Sample Dataset
 
 A small **sample dataset (25 images)** is included in the `dataset/` folder to test the detection system.
 
 ---
 
-## Author
+# Author
 
 Akshay
